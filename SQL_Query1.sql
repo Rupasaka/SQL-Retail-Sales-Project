@@ -1,4 +1,6 @@
-create table retail_sales(transaction_id int PRIMARY KEY,sales_date DATE,sales_time TIME,customer_id INT,gender VARCHAR(20),age INT,category VARCHAR(20),quantity INT,price_per_unit FLOAT,cogs FLOAT,total_sale FLOAT);
+create table retail_sales(transaction_id int PRIMARY KEY,sales_date DATE,sales_time TIME,
+       customer_id INT,gender VARCHAR(20),age INT,category VARCHAR(20),quantity INT,
+       price_per_unit FLOAT,cogs FLOAT,total_sale FLOAT);
 --Data cleaning
 select count(*) from retail_sales;
 select count(distinct transaction_id) from retail_sales;
